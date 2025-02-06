@@ -1,0 +1,104 @@
+
+/*header { width: 100%; }*/
+.nav-bar { display: none; }
+
+header nav { float: left;  z-index: 1000; width: auto; margin:30px 0; padding:0; }
+header nav ul { list-style: none; }
+header nav ul li {float: left; position: relative;}
+header nav:after {content: ""; display: block; clear: both;}
+
+header nav ul li a {color:#FFF; display: block; padding:15px 10px ; margin: 0; line-height:20px; text-decoration: none; font-size:14px; text-transform:uppercase; font-weight:600; letter-spacing:1px;}
+header nav ul li a:hover, header nav ul li a.active { color:#20CDEF; text-decoration:none; }
+header nav ul li i { margin-right:2px; }
+header nav ul li:hover .children { display: block; }
+header nav ul li .children {display: none; background:#FFF; position: absolute;  width:250px;  z-index: 1000; border:1px solid #F4F4F4;}
+header nav ul li .children span { display: none; }
+header nav ul li .children li {display: block; width: 100%; border-bottom: 1px solid #F4F4F4;}
+header nav ul li .children li:last-child { border-bottom:none !important;}
+
+header nav ul li .children li a { margin-left:0; line-height:20px; font-size:13px; padding:8px 15px; margin:0; text-transform:none; color:#000; font-weight:500; text-transform:capitalize; letter-spacing:.5px; }
+header nav ul li .children li a:hover {background:#263865; color:#FFF !important;}
+
+header nav ul li .fa-angle-down {
+  position: relative;
+  top: 2px;
+}
+
+header nav ul li .faicon { display:none;
+  position: relative;
+  top:1px; left:5px
+}
+
+
+
+@media only screen and ( min-width: 1299px) and (max-width: 2399px) {
+header nav ul li a {line-height:20px; padding:15px 15px; font-size:14px; }
+
+header nav ul li .children {width:250px;}
+header nav ul li .children span { display: none; }
+
+header nav ul li .children li a { line-height:20px; font-size:14px; padding:10px 15px; }
+
+header nav ul li .fa-angle-down {
+  position: relative;
+  top: 2px;
+}
+
+header nav ul li .faicon { display:none;
+  position: relative;
+  top:1px; left:5px
+}	
+}
+
+/*responsive nav style*/
+
+@media only screen and ( min-width: 768px) and ( max-width: 980px ) {
+header nav ul li a {padding:15px 7px; line-height:20px; font-size:11px;}
+header nav ul li .children {width:190px;}
+header nav ul li .children span { display: none; }
+
+header nav ul li .children li a { line-height:16px; font-size:10px; padding:7px 10px;}
+
+header nav ul li .fa-angle-down {
+  position: relative;
+  top: 2px;
+}
+
+header nav ul li .faicon { display:none;
+  position: relative;
+  top:1px; left:5px
+}	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.nav-bar {display: block; width: 100%; position: fixed; top: 0; background: #263865; border-bottom:1px solid #23335F; z-index: 1000;}
+.nav-bar span {float: left; font-size:16px; font-weight:700; line-height:25px; text-transform:uppercase; padding:10px 20px; color: #FFF; letter-spacing:1px;}
+
+.nav-bar .fa-ellipsis-v {display: block; padding:10px 20px; color: #FFF; overflow: hidden; font-size: 20px; line-height:25px; font-weight:600; text-decoration: none; float: right;}
+header nav {width:90%; height: auto; position: fixed; right: 100%; top :45px; overflow: hidden; overflow-y: auto; height: 100%; background:#FFF; margin:0;  }
+header nav ul li {display: block; border-bottom: 1px solid #F4F4F4; width: 100%; }
+header nav ul li:last-child { margin-bottom:60px !important;}
+header nav ul li .children li:last-child { border-bottom:none !important;  margin-bottom:0px !important;}
+header nav ul li a {color:#000; display: block; padding:10px 15px; margin:0; line-height:20px; text-decoration: none; font-size:14px;}
+header nav ul li a:hover, header nav ul li a.active { background:#20CDEF; color:#263865 !important; text-decoration:none; }
+/*header ul li a { display: block; font-size:14px; line-height:20px; margin:0; padding:0; border:1px solid #C93 }*/
+header nav ul li .children {width: 100%; position: relative; overflow: hidden; display: none; border-left:none; border:none;}
+header nav ul li:hover .children { display: none; }
+header nav ul li ul li:first-child { border-top: 1px solid #F4F4F4; }
+
+header nav ul li .children span {display: inline-block; margin-right: 10px;}
+
+/*header nav ul li .children a {
+  margin-left: 10px;
+  padding: 5px 0;
+}*/
+
+header nav ul li .fa-angle-down {position: relative; top: 3px;}
+header nav ul li .children li {display: block; width: 100%; border-bottom: 1px solid #F4F4F4;}
+header nav ul li .children li a {margin-left:0; line-height:20px; font-size:14px; padding:8px 15px 8px 25px; text-transform:capitalize; background:#FFF; color:#000; }
+header nav ul li .children li a:hover {background:#263865; color:#FFF;}
+
+header nav ul li .faicon { position: relative; display:block; top:3px; right:0; float:right;}
+
+}

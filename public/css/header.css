@@ -1,0 +1,84 @@
+body.fixed-header .scrolling-header .navbar {background:#FFF; margin-top:0; padding-top:0px; padding-bottom:0px; border-bottom:1px solid #F4F4F4; }
+body.fixed-header .scrolling-header .navbar div.container.relative-nav-container nav  { float:left;  z-index: 1000; width: auto; margin:25px 0; padding:0}
+body.fixed-header .scrolling-header .navbar div.container.relative-nav-container nav ul li a { color:#263865;}
+body.fixed-header .scrolling-header .navbar div.container.relative-nav-container nav ul li a:hover, body.fixed-header .scrolling-header .navbar div.container.relative-nav-container nav ul li a.active {color:#20CDEF; text-decoration:none;}
+/*body.fixed-header .scrolling-header .navbar .nav { margin:0 ; }*/
+
+
+
+.normal-logo, .scroll-logo { margin-left:15px;}
+
+body.fixed-header .scrolling-header .navbar .normal-logo {display: none; }
+body.fixed-header .scrolling-header .navbar .scroll-logo {display: inline-block;  margin-left:15px; margin-top:5px; margin-bottom:5px;}
+
+.header .navbar { padding-top:15px; padding-bottom:15px; margin-top:0; margin-bottom: 0; background:none; border:none; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+.header .navbar .relative-nav-container { -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+
+.header .navbar .scroll-logo {display: none;}
+
+/*TOP CONTACT BTN*/
+.header .contact-btn { float:left; margin:0 0 0 15px; padding:0;}
+body.fixed-header .scrolling-header .contact-btn { float:left; margin-top:-5px; padding:0;}
+
+.top-contact-btn { float:left; font-size:14px; font-weight:600; text-transform:uppercase; padding:10px 25px; line-height:30px ; color:#263865; background:#20CDEF; margin-top:30px; margin-right:0; margin-left:0; margin-bottom:0; border:none; letter-spacing:1px; transition:all ease .6s;-moz-transition:all ease .6s;-webkit-transition:all ease .6s;-o-transition:all ease .6s; border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px;}
+.top-contact-btn:hover { background:#263865;  color:#FFF; border:none;  transition:all ease .6s;-moz-transition:all ease .6s;-webkit-transition:all ease .6s;-o-transition:all ease .6s;}
+/*TOP CONTACT BTN*/
+
+@media only screen and ( min-width: 1299px) and (max-width: 2399px) {
+/*TOP CONTACT BTN*/
+.top-contact-btn { font-size:14px; padding:10px 25px; letter-spacing:1px;}
+/*TOP CONTACT BTN*/	
+}
+
+@media only screen and ( min-width: 768px) and ( max-width: 980px ) {
+/*TOP CONTACT BTN*/
+.top-contact-btn { font-size:11px; padding:10px 15px;}
+/*TOP CONTACT BTN*/
+}
+
+/* Landscape phone to portrait tablet */
+@media only screen and ( min-width: 600px) and ( max-width: 767px ) {
+
+.header { position: static !important;}
+.header .navbar { position: static !important; width:100%; padding-top:55px; padding-bottom:10px; margin-top:0;  background:#FFF; border-bottom:1px solid #F4F4F4;}
+body.fixed-header .scrolling-header .navbar { padding-top:10px; padding-bottom:10px;}
+.normal-logo, .scroll-logo {margin:0;}	
+
+.header .navbar .relative-nav-container {}
+
+/*TOP CONTACT BTN*/
+.header .contact-btn { float:left; margin:-10px 0 0 0; padding:0; }
+body.fixed-header .scrolling-header .contact-btn { float:left; margin:-10px 0 0 0; padding:0;}
+.top-contact-btn { font-size:13px; padding:10px 25px; line-height:20px;}
+/*TOP CONTACT BTN*/
+}
+
+
+@media only screen and ( min-width: 481px) and ( max-width: 599px ) {
+
+.header { position: static !important;}
+.header .navbar { position: static !important; width:100%; padding-top:55px; padding-bottom:10px; margin-top:0;  background:#FFF; border-bottom:1px solid #F4F4F4;}
+  body.fixed-header .scrolling-header .navbar { padding-top:10px; padding-bottom:10px;}	
+.normal-logo, .scroll-logo {margin:0;}	
+
+/*TOP CONTACT BTN*/
+.header .contact-btn { float:left; margin:-10px 0 0 0; padding:0; }
+body.fixed-header .scrolling-header .contact-btn { float:left; margin:-10px 0 0 0; padding:0;}
+.top-contact-btn { font-size:13px; padding:10px 25px; line-height:20px;}
+/*TOP CONTACT BTN*/	
+}
+
+
+@media only screen and ( min-width: 320px) and ( max-width: 480px ) {
+	
+.header { position: static !important; }
+.header .navbar { position: static !important; width:100%; padding-top:55px; padding-bottom:10px; margin-top:0;  background:#FFF; border-bottom:1px solid #F4F4F4;  }
+  body.fixed-header .scrolling-header .navbar { padding-top:10px; padding-bottom:10px;  }	
+.normal-logo, .scroll-logo {  margin:0;}	
+
+/*TOP CONTACT BTN*/
+.header .contact-btn { float:left; margin:-10px 0 0 0; padding:0; }
+body.fixed-header .scrolling-header .contact-btn { float:left; margin:-10px 0 0 0; padding:0;}
+.top-contact-btn { font-size:12px; padding:10px 20px; line-height:20px;}
+/*TOP CONTACT BTN*/	
+}
