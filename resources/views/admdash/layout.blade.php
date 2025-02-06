@@ -50,7 +50,7 @@
                                 <img style="height: 100%; width:100%;" src="{{asset('/images/logo.svg')}}" alt="">
                             </div>
                             <div class="nav">
-                                <div class="sb-sidenav-menu-heading">Modules</div>
+                                <div class="sb-sidenav-menu-heading mt-1 text-center" style="padding: 0px;">Modules</div>
                                 <a class="nav-link" href="{{route('Dashboard')}}">
                                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                     Dashboard
@@ -79,7 +79,7 @@
                                             <nav class="sb-sidenav-menu-nested nav">
                                                 <a class="nav-link" href="{{route('login')}}">Login</a>
                                                 <a class="nav-link" href="{{route('register')}}">Register</a>
-                                                <a class="nav-link" href="">Edit Profile</a>
+                                                <a class="nav-link mb-3" href="{{route('edit',Auth::user()->id)}}">Edit Profile</a>
                                             </nav>
                                 </div>
                             </div>
